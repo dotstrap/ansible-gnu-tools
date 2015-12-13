@@ -1,0 +1,39 @@
+---
+# defaults file for gnu-tools
+
+# see: https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
+
+gnu_tools:
+  - name: coreutils
+  - name: binutils
+  - name: diffutils
+  # - gawk
+  - name: gzip
+  - name: screen
+  - name: watch
+  - name: wget
+  - name: gnutls
+  - name: findutils
+    install_option: "with-default-names"
+  - name: gnu-indent
+    install_option: "with-default-names"
+  - name: gnu-sed
+    install_option: "with-default-names"
+  - name: gnu-tar
+    install_option: "with-default-names"
+  - name: gnu-which
+    install_option: "with-default-names"
+  - name: grep
+    install_option: "with-default-names"
+  # - name: wdiff
+    # install_option: "with-gettext"
+  # need to tap homebrew/dupes for:
+  # - name: bash
+  # - name: ed
+    # install_option: "with-default-names"
+  # - name: file-formula
+  # - name: gdb
+  # - name: gpatch
+  # - name: m4
+  # - name: make
+  # - name: nano

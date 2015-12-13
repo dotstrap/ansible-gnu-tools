@@ -1,0 +1,16 @@
+---
+# tasks file for gnu-tools
+
+- block:
+  - name: update homebrew
+    homebrew: update_homebrew=yes
+
+  - name: install packages
+    homebrew: name="{{ item.name }}" state=latest
+              install_options="{{ item.install_option|default(omit) }}"
+    with_items: "{{ gnu_tools }}"
+    tags:
+      - install
+      - update
+  when: ansible_distribution == 'MacOSX'
+  tags: bootstrap

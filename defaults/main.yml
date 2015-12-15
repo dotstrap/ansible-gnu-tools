@@ -1,8 +1,14 @@
 ---
 # defaults file for gnu-tools
 
-# see: https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
+dotstrap_config_home: "{{ ansible_user_dir }}/.config/dotstrap"
 
+marker: "#####=== {mark} Ansible managed GNU coreutils settings ===#####"
+
+install_state: present
+configuration_state: present
+
+# see: https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
 gnu_tools:
   - name: coreutils
   - name: binutils
@@ -12,11 +18,11 @@ gnu_tools:
   - name: screen
   - name: watch
   - name: wget
-  - name: gnutls
+  # - name: gnutls
   - name: findutils
     install_option: "with-default-names"
-  - name: gnu-indent
-    install_option: "with-default-names"
+  # - name: gnu-indent
+    # install_option: "with-default-names"
   - name: gnu-sed
     install_option: "with-default-names"
   - name: gnu-tar

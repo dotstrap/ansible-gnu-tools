@@ -16,4 +16,4 @@ galaxy_info:
     - GNU
 
 dependencies:
-  - { role: mkwmms.dotstrap, repo: "https://github.com/mkwmms/ansible-gnu-tools.git" }
+  - role: mkwmms.dotstrap-coreutils

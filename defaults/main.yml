@@ -1,7 +1,7 @@
 ---
 # defaults file for gnu-tools
 
-dotstrap_config_home: "{{ ansible_user_dir }}/.config/dotstrap"
+dotstrap_config_dir: "{{ ansible_user_dir }}/.config/dotstrap"
 
 marker: "#####=== {mark} Ansible managed GNU coreutils settings ===#####"
 

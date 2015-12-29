@@ -2,28 +2,23 @@ gnu-tools
 =========
 [![Build Status](https://travis-ci.org/mkwmms/ansible-gnu-tools.svg)](https://travis-ci.org/mkwmms/ansible-gnu-tools)
 
-Install & configure GNU Command Line Tools
+Install & configure GNU Command Line Tools.
 
 Requirements
 ------------
 
 [homebrew] and the latest XCode tools.
 
-
 Role Variables
 --------------
 
-See [default variables] & [variables].
-
-See the [files] directory for the configuration files that will be used to 
-link, or be sourced by your shell. See the documentation for [dotstrap] for
-more details.
+See the [default variables].
 
 Dependencies
 ------------
 
 ```
-mkwmms.dotstrap
+- role: [mkwmms.coreutils]
 ```
 
 Example Playbook
@@ -47,10 +42,12 @@ Author Information
 
 
 [@mkwmms]: https://github.com/mkwmms
-[dotstrap]: https://github.com/mkwmms/dotstrap
-[homebrew]: https://github.com/Homebrew/homebrew
-[files]: files/
+[coreutils]: https://github.com/mkwmms/ansible-coreutils
 [default variables]: defaults/main.yml
+[dotstrap]: https://github.com/mkwmms/dotstrap
+[files]: files/
+[fish]: http://fishshell.com/
+[homebrew]: https://github.com/Homebrew/homebrew
+[mkwmms.coreutils]: https://galaxy.ansible.com/detail#/role/6686
 [variables]: vars/main.yml
 [zsh]: http://zsh.sourceforge.net
-[fish]: http://fishshell.com/

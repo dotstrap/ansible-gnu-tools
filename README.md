@@ -1,5 +1,5 @@
-gnu-tools
-=========
+ansible-gnu-tools
+=================
 [![Build Status](https://travis-ci.org/mkwmms/ansible-gnu-tools.svg)](https://travis-ci.org/mkwmms/ansible-gnu-tools)
 
 Install & configure GNU Command Line Tools.

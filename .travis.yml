@@ -1,15 +1,12 @@
 ---
-language: python
-python: "2.7"
+language: objective-c
 sudo: false
 
-addons:
-  apt:
-    packages:
-    - python-pip
+before_install:
+  - brew update
 
 install:
-  - pip install git+https://github.com/ansible/ansible.git
+  - brew install ansible --HEAD
   - ansible --version
   - printf '[defaults]\nroles_path=../:/tmp/ansible/roles' >ansible.cfg
   - ansible-galaxy install mkwmms.coreutils -p /tmp/ansible/roles

@@ -1,5 +1,4 @@
 ---
-
 marker: "#####=== {mark} Ansible managed GNU coreutils settings ===#####"
 
 install_state: present

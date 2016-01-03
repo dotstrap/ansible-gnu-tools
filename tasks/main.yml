@@ -1,5 +1,4 @@
 ---
-
 - name: install
   homebrew: name="{{ item.name }}" state="{{ install_state }}"
             install_options="{{ item.install_option|default(omit) }}"

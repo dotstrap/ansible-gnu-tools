@@ -4,12 +4,15 @@ marker: "#####=== {mark} Ansible managed GNU coreutils settings ===#####"
 install_state: present
 configuration_state: present
 
+gnu_taps:
+  - homebrew/dupes
+
 # see: https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
 gnu_tools:
   - name: coreutils
   - name: binutils
   - name: diffutils
-  # - gawk
+  # - name: gawk
   - name: gzip
   - name: screen
   - name: watch

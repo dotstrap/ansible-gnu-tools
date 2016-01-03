@@ -1,8 +1,18 @@
 ---
-- name: install
-  homebrew: name="{{ item.name }}" state="{{ install_state }}"
-            install_options="{{ item.install_option|default(omit) }}"
-  with_items: "{{ gnu_tools }}"
+- block:
+    - name: setup | install taps
+      homebrew_tap: tap={{ item }} state=present
+      with_items: "{{ gnu_taps }}"
+
+    - name: install | gnu_tools
+      homebrew: name="{{ item.name }}" state="{{ install_state }}"
+                install_options="{{ item.install_option|default(omit) }}"
+      with_items: "{{ gnu_tools }}"
+
+    - name: teardown | uninstall taps
+      homebrew_tap: tap={{ item }} state=absent
+      with_items: "{{ gnu_taps }}"
+      when: install_state == 'absent'
   when: ansible_distribution == 'MacOSX'
   tags:
     - bootstrap

@@ -4,8 +4,8 @@
   homebrew: name="{{ item.name }}" state="{{ install_state }}"
             install_options="{{ item.install_option|default(omit) }}"
   with_items: "{{ gnu_tools }}"
-when: ansible_distribution == 'MacOSX'
-tags:
-  - bootstrap
-  - install
-  - update
+  when: ansible_distribution == 'MacOSX'
+  tags:
+    - bootstrap
+    - install
+    - update

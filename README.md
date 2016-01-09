@@ -4,10 +4,17 @@ ansible-gnu-tools
 
 Install & configure GNU Command Line Tools.
 
+Installation
+------------
+
+```
+ansible-galaxy install mkwmms.gnu-tools
+```
+
 Requirements
 ------------
 
-[homebrew] and the latest XCode tools.
+[homebrew] and the latest Xcode tools.
 
 Role Variables
 --------------
@@ -18,16 +25,18 @@ Dependencies
 ------------
 
 ```
-- role: [mkwmms.coreutils]
+- role: [ mkwmms.coreutils ]
 ```
 
 Example Playbook
 ----------------
 
+Using all the [default variables]:
+
 ```
-    - hosts: servers
+    - hosts: all
       roles:
-         - { role: mkwmms.gnu-tools }
+         - role: mkwmms.gnu-tools
 ```
 
 License

@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: mkwmms
+  author: mwilliammyers
   description: Install & configure GNU Command Line Tools
   license: GPLv3
   min_ansible_version: 1.8
@@ -13,4 +13,4 @@ galaxy_info:
     - GNU
 
 dependencies:
-  - role: mkwmms.coreutils
+  - role: mwilliammyers.coreutils

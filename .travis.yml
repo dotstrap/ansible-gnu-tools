@@ -9,7 +9,7 @@ install:
   - brew install ansible --HEAD
   - ansible --version
   - printf '[defaults]\nroles_path=../:/tmp/ansible/roles' >ansible.cfg
-  - ansible-galaxy install mkwmms.coreutils -p /tmp/ansible/roles
+  - ansible-galaxy install mwilliammyers.coreutils -p /tmp/ansible/roles
 
 script:
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check

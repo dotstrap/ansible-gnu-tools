@@ -13,4 +13,4 @@ galaxy_info:
     - GNU
 
 dependencies:
-  - role: mwilliammyers.coreutils
+  - role: dotstrap.coreutils

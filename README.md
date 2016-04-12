@@ -1,16 +1,16 @@
 ansible-gnu-tools
 =================
-[![Build Status](https://travis-ci.org/mwilliammyers/ansible-gnu-tools.svg)](https://travis-ci.org/mwilliammyers/ansible-gnu-tools)
+[![Build Status](https://travis-ci.org/dotstrap/ansible-gnu-tools.svg)](https://travis-ci.org/dotstrap/ansible-gnu-tools)
 
 Install & configure [GNU] Command Line Tools.
 
-See also: [mwilliammyers.coreutils](https://github.com/mwilliammyers/ansible-coreutils)
+See also: [dotstrap.coreutils](https://github.com/dotstrap/ansible-coreutils)
 
 Installation
 ------------
 
 ```
-ansible-galaxy install mwilliammyers.gnu-tools
+ansible-galaxy install dotstrap.gnu-tools
 ```
 
 Requirements
@@ -27,7 +27,7 @@ Dependencies
 ------------
 
 ```
-- role: [ mwilliammyers.coreutils ]
+- role: [ dotstrap.coreutils ]
 ```
 
 Example Playbook
@@ -38,7 +38,7 @@ Using all the [default variables]:
 ```
     - hosts: all
       roles:
-         - role: mwilliammyers.gnu-tools
+         - role: dotstrap.gnu-tools
 ```
 
 License

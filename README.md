@@ -44,7 +44,7 @@ Using all the [default variables]:
 License
 -------
 
-GPLv3
+MIT
 
 Author Information
 ------------------

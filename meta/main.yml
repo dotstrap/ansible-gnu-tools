@@ -2,7 +2,7 @@
 galaxy_info:
   author: mwilliammyers
   description: Install & configure GNU Command Line Tools
-  license: GPLv3
+  license: MIT
   min_ansible_version: 1.8
   platforms:
     - name: GenericUNIX

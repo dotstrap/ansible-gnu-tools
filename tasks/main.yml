@@ -16,5 +16,8 @@
   when: ansible_distribution == 'MacOSX'
   tags:
     - bootstrap
+    - bootstrap_gnu_tools
     - install
+    - install_gnu_tools
     - update
+    - update_gnu_tools
